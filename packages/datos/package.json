@@ -1,0 +1,16 @@
+{
+  "name": "@propuestas/datos",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Datos sintéticos y lógica en memoria compartidos por los 4 prototipos (solo cambia la UI).",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}
