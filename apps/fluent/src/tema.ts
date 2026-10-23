@@ -26,6 +26,17 @@ export const tema: Theme = {
   fontFamilyBase: fuente,
   colorNeutralBackground2: '#F5F6F8',
   colorNeutralBackground3: '#EEF0F3',
+  // Error bermellón (distinto del rojo de marca) en validaciones, MessageBar y Badge de peligro.
+  colorPaletteRedForeground1: '#C4320A',
+  colorPaletteRedForeground3: '#C4320A',
+  colorPaletteRedBorder2: '#C4320A',
+  colorPaletteRedBackground3: '#C4320A',
+  colorStatusDangerForeground1: '#9E2806',
+  colorStatusDangerForeground3: '#C4320A',
+  colorStatusDangerBorder1: '#F3B9A5',
+  colorStatusDangerBorder2: '#C4320A',
+  colorStatusDangerBackground1: '#FDEDE7',
+  colorStatusDangerBackground3: '#C4320A',
 };
 
 /** El menú lateral usa un tema oscuro anidado (FluentProvider dentro de otro), como en los mockups. */

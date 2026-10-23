@@ -28,9 +28,9 @@ for (const app of APPS.filter((a) => !SOLO || a === SOLO)) {
       await page.screenshot({ path: join(SALIDA, `${app}-dialogo-transferir.png`) });
       await page.goto(`${sitio.url}?pantalla=puesto`);
       await page.waitForTimeout(1200);
-      await page.getByRole('button', { name: 'Atender', exact: true }).click();
+      await page.getByRole('button', { name: /Atender$/ }).click();
       await page.getByLabel('No reactivo').check();
-      await page.getByRole('button', { name: /^Aprobar/ }).click();
+      await page.getByRole('button', { name: /Aprobar: pasar/ }).click();
       await page.waitForTimeout(400);
       await page.screenshot({ path: join(SALIDA, `${app}-puesto-formulario.png`), fullPage: true });
       expect(externas, 'el build no debe pedir nada a internet').toEqual([]);
