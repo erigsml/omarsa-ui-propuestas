@@ -20,6 +20,19 @@ for (const app of APPS.filter((a) => !SOLO || a === SOLO)) {
         await page.waitForTimeout(1500);
         await page.screenshot({ path: join(SALIDA, `${app}-${pantalla}.png`), fullPage: true });
       }
+      // Estados interactivos: diálogo de transferencia y formulario con validación.
+      await page.goto(`${sitio.url}?pantalla=tablero`);
+      await page.waitForTimeout(1200);
+      await page.getByRole('button', { name: /Transferir/ }).first().click();
+      await page.waitForTimeout(600);
+      await page.screenshot({ path: join(SALIDA, `${app}-dialogo-transferir.png`) });
+      await page.goto(`${sitio.url}?pantalla=puesto`);
+      await page.waitForTimeout(1200);
+      await page.getByRole('button', { name: 'Atender', exact: true }).click();
+      await page.getByLabel('No reactivo').check();
+      await page.getByRole('button', { name: /^Aprobar/ }).click();
+      await page.waitForTimeout(400);
+      await page.screenshot({ path: join(SALIDA, `${app}-puesto-formulario.png`), fullPage: true });
       expect(externas, 'el build no debe pedir nada a internet').toEqual([]);
     } finally {
       await sitio.cerrar();
