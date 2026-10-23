@@ -1,0 +1,27 @@
+html, body, #raiz { margin: 0; min-height: 100%; }
+body { background: #F5F6F8; }
+.num { font-variant-numeric: tabular-nums; }
+.marca { display: flex; gap: 12px; align-items: center; padding: 20px 20px 16px; color: #E9EBEF; }
+.marca strong { display: block; font-size: 15px; line-height: 1.2; }
+.marca span { font-size: 12px; color: #A7ADB8; }
+.barra { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 16px; padding: 0 24px; height: 64px; background: #fff; border-bottom: 1px solid #E5E7EB; }
+.cabecera { margin-bottom: 24px; }
+.cabecera h1 { margin: 0; font-size: 25px; line-height: 1.2; font-weight: 650; letter-spacing: -0.01em; }
+.cabecera p { margin: 4px 0 0; color: #5C6370; }
+.kpi-alerta.ant-card { border-color: #C4320A; background: #FDEDE7; }
+.cuello { display: grid; grid-template-columns: 120px 1fr 176px; gap: 16px; align-items: center; padding: 10px 12px; border-radius: 6px; }
+.cuello.critico { background: #FDEDE7; box-shadow: inset 3px 0 0 #C4320A; }
+.cuello .meta { font-size: 12.8px; color: #5C6370; text-align: right; }
+.fila-excedida td:first-child { box-shadow: inset 3px 0 0 #C4320A; }
+.papel { background: #fff; border: 1px solid #E5E7EB; border-radius: 4px; box-shadow: 0 8px 24px rgba(0,0,0,.08); padding: 32px 36px; min-height: 440px; color: #1F2329; }
+.papel header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #DD343B; padding-bottom: 12px; margin-bottom: 20px; font-size: 12px; }
+.papel h3 { margin: 0 0 16px; font-size: 18px; }
+.papel .campos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; font-size: 13px; margin-bottom: 16px; }
+.papel .campos span { color: #6B7280; display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.papel p { font-size: 13px; line-height: 1.6; color: #374151; }
+.papel .firmas { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; font-size: 12px; color: #6B7280; text-align: center; }
+.papel .firmas div { border-top: 1px solid #9CA3AF; padding-top: 8px; }
+.llamada { text-align: center; padding: 16px 8px; }
+.llamada .nombre { font-size: 31px; font-weight: 650; line-height: 1.2; margin: 16px 0 4px; }
+.llamada .codigo { display: inline-block; font-size: 20px; font-weight: 700; letter-spacing: .04em; padding: 4px 12px; border-radius: 6px; background: #FBECEC; color: #AF101A; }
+.doc-activo { background: #FBECEC; }
