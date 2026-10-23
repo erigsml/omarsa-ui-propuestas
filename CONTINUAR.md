@@ -53,17 +53,18 @@ Las 3 pantallas, dentro de un shell de BackOffice (menú lateral, buscador por c
 - [x] `apps/antd`
 - [x] `apps/mantine`
 - [x] `apps/shadcn`
-- [ ] `pruebas/smoke.spec.ts` (una prueba por app) y `pruebas/capturas.spec.ts`
-- [ ] Capturas a 1440×900 de cada pantalla (solo claro) en `capturas/<biblioteca>-<pantalla>.png`, más el diálogo de transferencia y el formulario con validación.
+- [x] `pruebas/smoke.spec.ts` (una prueba por app) y `pruebas/capturas.spec.ts` (`npm run ci` en verde el 23-oct)
+- [x] Capturas a 1440×900 de cada pantalla (solo claro) en `capturas/<biblioteca>-<pantalla>.png`, más el diálogo de transferencia y el formulario con validación.
 - [-] `NOTAS.md` y análisis con axe: **descartados por el usuario** el 23-oct ("hazlo breve… quiero ver cómo se ve cada biblioteca para decidir a simple vista"). El resumen va en el informe final.
-- [ ] Una página `index.html` en la raíz del build que enlace a las 4 apps, para probarlas una tras otra.
+- [x] Página índice (`indice/index.html`) que enlaza las 4 apps; `npm run publicar -- <carpeta>` junta builds, capturas e índice.
 
 ## Comandos
 ```bash
 npm install
 npm run dev -w apps/shadcn        # o fluent / antd / mantine
 npm run ci                        # lint + typecheck + build + smoke
-npm run capturas
+npm run capturas                  # CAPTURAS_DIR=capturas para guardarlas en el repo
+npm run publicar -- <carpeta>     # sitio estático con las 4 apps
 ```
 Construye las apps **de una en una**: la máquina local se queda sin memoria si se construyen todas a la vez.
 
