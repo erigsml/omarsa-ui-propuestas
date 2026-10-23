@@ -1,0 +1,21 @@
+body { background: linear-gradient(to right, #17191E 248px, #F5F6F8 248px); }
+.num { font-variant-numeric: tabular-nums; }
+.lateral { background: #17191E; color: #E9EBEF; border-right: 0; }
+.lateral .mantine-NavLink-root { border-radius: 6px; color: #D5D9E0; }
+.lateral .mantine-NavLink-root:hover { background: #24272E; }
+.lateral .mantine-NavLink-root[data-active] { background: #AF101A; color: #fff; }
+.cuello { display: grid; grid-template-columns: 120px 1fr 176px; gap: 16px; align-items: center; padding: 10px 12px; border-radius: 6px; }
+.cuello.critico { background: #FDEDE7; box-shadow: inset 3px 0 0 #C4320A; }
+.cuello .meta { font-size: 12.8px; color: #5C6370; text-align: right; }
+.kpi-alerta { border-color: #C4320A !important; background: #FDEDE7 !important; }
+.fila-excedida td:first-child { box-shadow: inset 3px 0 0 #C4320A; }
+.papel { background: #fff; border: 1px solid #E5E7EB; border-radius: 4px; box-shadow: 0 8px 24px rgba(0,0,0,.08); padding: 32px 36px; min-height: 440px; color: #1F2329; }
+.papel header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #DD343B; padding-bottom: 12px; margin-bottom: 20px; font-size: 12px; }
+.papel h3 { margin: 0 0 16px; font-size: 18px; }
+.papel .campos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; font-size: 13px; margin-bottom: 16px; }
+.papel .campos span { color: #6B7280; display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+.papel p { font-size: 13px; line-height: 1.6; color: #374151; }
+.papel .firmas { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; font-size: 12px; color: #6B7280; text-align: center; }
+.papel .firmas div { border-top: 1px solid #9CA3AF; padding-top: 8px; }
+.codigo { display: inline-block; font-size: 20px; font-weight: 700; letter-spacing: .04em; padding: 4px 12px; border-radius: 6px; background: #FBECEC; color: #AF101A; }
+.th-orden { display: inline-flex; gap: 4px; align-items: center; font-weight: 600; }
